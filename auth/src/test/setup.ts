@@ -31,9 +31,15 @@ beforeEach(async() => {
     }
 })
 
-afterAll(async() => {
+// afterAll(async() => {
+//     await mongoose.connection.close()
+// })
+
+afterAll( async () => {
+    console.log("... Test Ended");
+    await mongoose.connection.dropDatabase()
     await mongoose.connection.close()
-})
+});
 
 global.signin = async() => {
     const email = 'test@test.com'
