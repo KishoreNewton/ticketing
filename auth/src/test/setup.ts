@@ -39,6 +39,7 @@ afterAll( async () => {
     console.log("... Test Ended");
     await mongoose.connection.dropDatabase()
     await mongoose.connection.close()
+    process.exit()
 });
 
 global.signin = async() => {
