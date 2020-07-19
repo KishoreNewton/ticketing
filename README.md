@@ -34,7 +34,7 @@ The front-end is avaliable in __client__ directry
 
 >./infra/k8s/ingress-srv.yaml
 
-Change the host at __line 10__ to your domain in case or production.
+Change the host at __line 10__ to your domain in case of production.
 
 __ELSE__
 
@@ -42,6 +42,7 @@ Edit host file of your OS.
 
 _Host file at_
 >MacOs/Linux - /etc/hosts
+
 >Windows - C:\Windows\System32\Drivers\etc\hosts
 
 _ADD_
@@ -66,6 +67,8 @@ on browser to bypass the error
 In line number 17 of
 >./payments/src/test/setup.ts
 
+Enter a valid stripe key for test to pass.
+
 ### PAYMENT TIMEOUT FOR USERS
 
 For development reasons payment expiration event is set to 1 Min. For production you can change it at
@@ -76,7 +79,9 @@ __CURRENTLY__
 ```javascript
 const EXPIRATION_WINDOW_SECONDS = 1 * 60
 ```
-__CHANGE IT TO 15 MINUTES__
+__CHANGE IT TO 15 MINUTES OR MORE__
+I'm setting it to 15 minutes
+
 ```javascript
 const EXPIRATION_WINDOW_SECONDS = 15 * 60
 ```
