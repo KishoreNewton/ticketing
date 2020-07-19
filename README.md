@@ -34,7 +34,7 @@ The front-end is avaliable in __client__ directry
 
 >./infra/k8s/ingress-srv.yaml
 
-Change the host at __line 10__ to your domain in case of production.
+Change the host at __line 10__ to your domain in case of __production__.
 
 __ELSE__
 
@@ -45,8 +45,8 @@ _Host file at_
 
 >Windows - C:\Windows\System32\Drivers\etc\hosts
 
-_ADD_
-```host
+_ADD AT THE END OF FILE_
+```
 127.0.0.1 ticketing.dev
 ```
 
