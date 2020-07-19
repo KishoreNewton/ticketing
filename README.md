@@ -100,3 +100,9 @@ in root directory to run in local file
 __Learn more about skaffold at__
 
 https://skaffold.dev/docs/quickstart/
+
+### LOAD BALANCER
+
+Minimum __THREE__ load balancer required to run efficeiently. Two might do the job but haven't tested for two. 
+
+'__Tested on digitalocean__'
