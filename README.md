@@ -1,8 +1,8 @@
 # E-COMMERCE - MICROSERVICES
 
-### Install all package by running 
+### Install all packages 
 
-__In terminal inside__ _auth, client, expiration,orders, payments, tickets_ __directory__ 
+__In terminal. Inside__ _auth, client, expiration,orders, payments, tickets_ __directory__ 
 
 Run
 
