@@ -25,9 +25,9 @@ The front-end is avaliable in __client__ directry
 
 ### REQUIRED
 
->skaffold
->docker
->Kubernetes
+>skaffold ||
+>docker ||
+>Kubernetes ||
 >Minikube ['Only Linux']
 
 ### Configure HOSTS AT
