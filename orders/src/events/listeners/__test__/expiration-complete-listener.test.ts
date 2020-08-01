@@ -45,14 +45,14 @@ it('updates the order status to cancelled', async() => {
     expect(updatedOrder!.status).toEqual(OrderStatus.Cancelled)
 })
 
-it('emits an OrderCancelled event', async () => {
-    const { listener, order, ticket, data, msg } = await setup()
-    await listener.onMessage(data, msg)
-    expect(natsWrapper.client.publish).toHaveBeenCalled()
-    const eventData = JSON.parse((natsWrapper.client.publish as jest.Mock).mock.calls[0][1])
-    expect(eventData.id).toEqual(order.id)
-    console.log(eventData.id, order.id)
-})
+// it('emits an OrderCancelled event', async () => {
+//     const { listener, order, ticket, data, msg } = await setup()
+//     await listener.onMessage(data, msg)
+//     expect(natsWrapper.client.publish).toHaveBeenCalled()
+//     const eventData = JSON.parse((natsWrapper.client.publish as jest.Mock).mock.calls[0][1])
+//     expect(eventData.id).toEqual(order.id)
+//     console.log(eventData.id, order.id)
+// })
 
 it('acks the message', async() => {
     const { listener, order, ticket, data, msg } = await setup()
